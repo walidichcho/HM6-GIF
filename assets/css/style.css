@@ -1,0 +1,29 @@
+
+    
+    body {
+        background-color: lightblue;
+    }
+
+    #header {
+        background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&w=1000&q=80);
+        color: aliceblue;
+        text-align: center;
+    }
+
+    #imgs {
+        width: 300px;
+        height: 250px;
+    }
+
+    button {
+        background-color: #f1f1f1;
+        width: 80px;
+        margin: 10px;
+        text-align: center;
+
+
+    }
+
+    #animalSearch {
+        margin-left: 70px;
+    }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AJAX Giphy Button</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/javascript/gif.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- //create a heater and buttons / button in row -->
+
+    <div class="jumbotron" id="header">
+
+        <h1>The Animal Planet</h1>
+
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="btn-group inline pull-left">
+                <button class="btn btn-primary" id="show" data-search="lion">lion</button>
+                <button class="btn btn-primary" id="show" data-search="horse">horse</button>
+                <button class="btn btn-primary" id="show" data-search="elephant">elephant</button>
+                <button class="btn btn-primary" id="show" data-search="snakes">snakes</button>
+                <button class="btn btn-primary" id="show" data-search="monkey">dog</button>
+                <button class="btn btn-primary" id="show" data-search="bear">bear</button>
+                <button class="btn btn-primary" id="show" data-search="fish">fish</button>
+                <button class="btn btn-primary" id="show" data-search="giraffe">girrafe</button>
+                <button class="btn btn-primary" id="show" data-search="goat">goat</button>
+                <button class="btn btn-primary" id="show" data-search="tiger">tiger</button>
+                <button class="btn btn-primary" id="show" data-search="wolf">wolf</button>
+                <button class="btn btn-primary" id="show" data-search="deer">deer</button>
+                <button class="btn btn-primary" id="show" data-search="chicken">chicken</button>
+                <button class="btn btn-primary" id="show" data-search="sheep">sheep</button>
+                <button class="btn btn-primary" id="show" data-search="fox">fox</button>
+                <button class="btn btn-primary" id="show" data-search="turtle">turtle</button>
+
+                <!-- create a div for the button that user will add -->
+
+                <div id="myButtons"></div>
+            </div>
+
+        </div>
+        <!--end of container -->
+    </div><br>
+
+    <!--end of row -->
+    <form class="form-inline" id="animalSearch">
+        <div class="form-group">
+            <label for="animalInput"> Search for Animal </label>
+            <input type="text" id="animalInput">
+        </div>
+        <!-- input for the animal search  -->
+        <input id="addShow" type="submit" value="submit">
+    </form>
+
+    <!-- end of form section -->
+    <!-- create a div for the area where will see our pictures -->
+    <div class="row">
+        <div class="container">
+            <span>
+                <div id="gifs-appear-here"></div>
+            </span>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
