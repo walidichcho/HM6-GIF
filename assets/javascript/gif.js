@@ -17,7 +17,7 @@ $(document).ready(function () {
             x + "&api_key=PZfMcJG8iWOXERGCKxCSLOrRXG0Iwz8d&limit=10";
         console.log(queryURL);
 
-        //  call Ajax funtion to store the data
+        //  call Ajax function to store the data
 
         $.ajax({
             url: queryURL,
@@ -26,7 +26,7 @@ $(document).ready(function () {
             //then take the data and apply this function to each animal using a loop method
             //create varible fpr images and rating for each image.
             //using Jqurey to display the result on html tags(append it)
-            .done(function (response) {
+            .then(function (response) {
                 var results = response.data;
                 console.log(results);
                 for (var i = 0; i < results.length; i++) {
@@ -77,13 +77,13 @@ $(document).ready(function () {
 
     displayButtons();
 
-    //Click event on button with id of "show" executes displayNetflixShow function
+    //Click event on button with id of "show" executes to go to displayanimalshow function
     $(document).on("click", "#show", displayanimalShow);
 
-    //Click event on gifs with class of "netflixGiphy" executes pausePlayGifs function
+    //Click event on gifs with class animalGiphy to create state of each image
     $(document).on("click", ".animalGiphy", stopGifs);
 
-    //Function accesses "data-state" attribute and depending on status, changes image source to "data-animate" or "data-still"
+    //Function access to change the stage of each picture when you click using if statement.
     function stopGifs() {
         var state = $(this).attr("data-state");
         if (state === "still") {
